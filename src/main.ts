@@ -1,7 +1,9 @@
 import { Professor } from "./models/Professor";
 import { iniciarBatalha } from "./game/Battle";
 import { Renderer } from "./ui/Renderer";
-
+/**
+ * Lista inicial de professores da batalha.
+ */
 const professores = [
   new Professor("Maykol", 20, 10, 3, "./assets/sprites/maykol.png"),
   new Professor("Sekeff", 18, 12, 2, "./assets/sprites/sekeff.png"),
@@ -11,10 +13,12 @@ const professores = [
   new Professor("Jefferson", 21, 9, 4, "./assets/sprites/jefferson.png"),
   new Professor("Marcos", 16, 14, 1, "./assets/sprites/marcos.png"),
 ];
-
+/** Inicializa o renderizador */
 const renderer = new Renderer("arena");
 renderer.render(professores);
-
+/**
+ * Evento de início da batalha.
+ */
 document.getElementById("btnIniciar")!.addEventListener("click", () => {
   iniciarBatalha(
     professores,

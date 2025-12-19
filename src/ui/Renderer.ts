@@ -1,12 +1,23 @@
 import { Professor } from "../models/Professor";
-
+/**
+ * Responsável por renderizar os professores na arena.
+ */
 export class Renderer {
+  /** Elemento HTML da arena */
   arena: HTMLElement;
-
+  /**
+   * Cria o renderizador da arena.
+   *
+   * @param arenaId ID do elemento HTML da arena
+   */
   constructor(arenaId: string) {
     this.arena = document.getElementById(arenaId)!;
   }
-
+  /**
+   * Renderiza todos os professores na tela.
+   *
+   * @param professores Lista de professores a serem renderizados
+   */
   render(professores: Professor[]) {
     this.arena.innerHTML = "";
 
@@ -26,8 +37,8 @@ export class Renderer {
         </div>
 
         <p>HP: ${p.hp}</p>
-        <p>ATK:${p.ataque} DEF:${p.defesa}</p>
-        <p>VEL:${p.velocidade}</p>
+        <p>ATK: ${p.ataque} | DEF: ${p.defesa}</p>
+        <p>VEL: ${p.velocidade}</p>
       `;
 
       this.arena.appendChild(card);
