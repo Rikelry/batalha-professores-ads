@@ -1,4 +1,4 @@
-# git push -u origin mainBatalha de Professores ADS
+# Batalha de Professores ADS
 ## Como executar
 1. Clone o repositório:
 ```
