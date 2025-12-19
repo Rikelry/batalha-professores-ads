@@ -2,7 +2,7 @@
 ## Como executar
 1. Clone o repositório:
 ```
-git clone https://github.com/Rikelry/FilaPrioridade.git
+git clone https://github.com/Rikelry/batalha-professores-ads.git
 ```
 
 2. Instale as dependências:
